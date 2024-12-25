@@ -7,6 +7,8 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -34,6 +36,20 @@ header .logo a:hover {
 header .logo {
   margin: 15px 0px 15px 15px;
 }
+
+header .openMenu{
+  font-size: 1.2rem;
+  margin: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+header .header-right .closeMenu{
+  font-size: 1.2rem;
+  display: none;
+  cursor: pointer;
+}
+
 
 header a span {
   font-family: "Poppins", serif;
@@ -288,10 +304,35 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .header-right {
+  header .header-right{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    transition: top 1s ease;
     display: none;
   }
+  header .header-right .closeMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
+  header .openMenu{
+    display: block;
+  }
+
+  .header-right a:hover{
+    background: rgb(208, 211, 214);
+  }
+  
   .hero-title .part2 {
     display: none;
   }
@@ -317,6 +358,35 @@ a {
 }
 
 @media screen and (max-width: 667px) {
+  header .header-right{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  header .header-right .closeMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  header .openMenu{
+    display: block;
+  }
+
+  .header-right a:hover{
+    background: rgb(208, 211, 214);
+  }
   .header-right {
     display: none;
   }
