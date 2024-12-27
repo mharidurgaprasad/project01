@@ -1,0 +1,92 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #000;
+    background: #fff;
+}
+
+header a{
+  text-decoration: none;
+  margin: 8px 10px;
+  font-size: 20px;
+  color: #000;
+  align-items: center;
+  align-content: center;
+}
+
+.header-right{
+    margin: 8px 10px;
+}
+
+.header-right a{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header-right a:hover{
+    background: grey;
+}
+
+.hero .hero-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero img{
+   width: 100%;
+   height: 100%;
+}
+
+.hero-title span{
+    background: grey;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.projects{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sec-heading{
+    font-size: 24px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.project-item img{
+    width: 100%;
+}
+
+.projects .project-item .project-title{
+    position: fixed;
+    top: 0;
+    color: #fff;
+    z-index: 10;
+    padding: 6px;
+    background: black;
+}
